@@ -1,0 +1,30 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="createTable" author="Juan Simancas">
+        <createTable tableName="clients">
+            <column name="run_client" type="Integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="digit_ver_client" type="Integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="first_name_client" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name_client" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_client" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
