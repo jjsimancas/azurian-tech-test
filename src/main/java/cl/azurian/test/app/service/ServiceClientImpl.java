@@ -1,14 +1,12 @@
 package cl.azurian.test.app.service;
 
 import cl.azurian.test.app.models.Client;
+import cl.azurian.test.app.models.RequestClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class ServiceClientImpl implements ServiceClient {
@@ -22,5 +20,9 @@ public class ServiceClientImpl implements ServiceClient {
         return clients;
     }
 
-
+    @Override
+    public Client findByRun(RequestClient requestClient) {
+        Client client = entityManager.find(Client.class, requestClient.getRun());
+        return client;
+    }
 }

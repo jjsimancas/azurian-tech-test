@@ -7,7 +7,7 @@
    http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <changeSet id="createTable" author="Juan Simancas">
+    <changeSet id="createTable" author="jjsimancas">
         <createTable tableName="clients">
             <column name="run_client" type="Integer">
                 <constraints primaryKey="true" nullable="false"/>
