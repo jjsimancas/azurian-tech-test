@@ -1,0 +1,22 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="jjsimancas" id="insertInitialData" runOnChange="true">
+        <loadData tableName="clients" file="liquibase-config/data.csv">
+            <column header="run_client" name="run_client" />
+            <column header="digit_ver_client" name="digit_ver_client" />
+            <column header="first_name_client" name="first_name_client" />
+            <column header="last_name_client" name="last_name_client" />
+            <column header="phone_client" name="phone_client" />
+        </loadData>
+    </changeSet>
+</databaseChangeLog>
+
+
+

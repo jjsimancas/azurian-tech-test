@@ -1,9 +1,9 @@
 package cl.azurian.test.app.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "clients")
@@ -11,14 +11,19 @@ public class Client {
 
     @Id
     @Column(name = "run_client")
+    @JsonProperty("run")
     private Integer run;
     @Column(name = "digit_ver_client")
+    @JsonProperty("digit_verifier")
     private Integer digitVer;
     @Column(name = "first_name_client")
+    @JsonProperty("name")
     private String firstName;
     @Column(name = "last_name_client")
+    @JsonProperty("lastname")
     private String lastName;
-    @Column(name = "phone_client", nullable = true)
+    @Column(name = "phone_client")
+    @JsonProperty("phone")
     private String phoneClient;
 
     public Integer getRun() {
