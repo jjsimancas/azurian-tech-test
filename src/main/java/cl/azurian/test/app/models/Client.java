@@ -14,13 +14,13 @@ public class Client {
     @JsonProperty("run")
     private Integer run;
     @Column(name = "digit_ver_client")
-    @JsonProperty("digit_verifier")
+    @JsonProperty("digitVerifier")
     private Integer digitVer;
     @Column(name = "first_name_client")
     @JsonProperty("name")
     private String firstName;
     @Column(name = "last_name_client")
-    @JsonProperty("lastname")
+    @JsonProperty("lastName")
     private String lastName;
     @Column(name = "phone_client")
     @JsonProperty("phone")
