@@ -2,7 +2,7 @@
 
 Se procedio al desarrollo de este artefacto para su posterior consumo desde FrontEnd.
 
-##Base de datos
+# Base de datos
 Segun especificacion en pdf enviado via correo se debe proporcionar el script de creacion de base datos.
 
 *El script de creacion de la base de datos se encuentra en /resources/database.sql. Solo genera la base de datos.
