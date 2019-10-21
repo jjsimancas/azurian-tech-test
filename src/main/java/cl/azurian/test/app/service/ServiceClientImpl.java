@@ -2,12 +2,12 @@ package cl.azurian.test.app.service;
 
 import cl.azurian.test.app.models.Client;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@Repository
+@Service
 public class ServiceClientImpl implements ServiceClient {
 
     @Autowired
@@ -18,5 +18,6 @@ public class ServiceClientImpl implements ServiceClient {
         List<Client> clients = entityManager.createQuery("from Client").getResultList();
         return clients;
     }
+
 
 }
