@@ -15,7 +15,7 @@ public class Client {
     private Integer run;
     @Column(name = "digit_ver_client")
     @JsonProperty("digitVerifier")
-    private Integer digitVer;
+    private char digitVer;
     @Column(name = "first_name_client")
     @JsonProperty("name")
     private String firstName;
@@ -34,11 +34,11 @@ public class Client {
         this.run = run;
     }
 
-    public Integer getDigitVer() {
+    public char getDigitVer() {
         return digitVer;
     }
 
-    public void setDigitVer(Integer digitVer) {
+    public void setDigitVer(char digitVer) {
         this.digitVer = digitVer;
     }
 

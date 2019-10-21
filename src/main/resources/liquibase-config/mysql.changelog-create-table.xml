@@ -12,7 +12,7 @@
             <column name="run_client" type="Integer">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="digit_ver_client" type="Integer">
+            <column name="digit_ver_client" type="char">
                 <constraints nullable="false"/>
             </column>
             <column name="first_name_client" type="varchar(50)">

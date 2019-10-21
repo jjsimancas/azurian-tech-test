@@ -34,7 +34,7 @@ class ClAzurianTestAppApplicationTests {
 	public void findAllTest(){
 		Client client = new Client();
 		client.setRun(23232333);
-		client.setDigitVer(4);
+		client.setDigitVer('4');
 		client.setFirstName("Alonso");
 		client.setLastName("Ojeda");
 		client.setPhoneClient("979002323");
