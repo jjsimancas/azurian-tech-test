@@ -48,6 +48,11 @@ Este artefacto esta configurado para el uso de variables de entorno en caso de q
 Por el momento estas se encuentran seteadas en el application.properties con los valores que buscara.
 
 _Las variables de entorno son:_
+* BD_HOST
+* BD_PORT
+* BD_NAME
+* BD_USERNAME
+* BD_PASSWORD
   
 
 ## Construido con 🛠️
